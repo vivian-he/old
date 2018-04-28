@@ -37,19 +37,19 @@ class Ability
       # can read associated family information for any student they are
       # authorized to view.
 
-      can :read, Student do |stud|  
-        #find the instructor
-        intruc = Instructor.map{|i| i if i.user.id == user.id}.first
-        display_students = Student.map{|s| }# map to get student who has this instructor
-        display_students.include? stud.id
-      end
+      # can :read, Student do |stud|  
+      #   #find the instructor
+      #   intruc = Instructor.map{|i| i if i.user.id == user.id}.first
+      #   display_students = Student.map{|s| }# map to get student who has this instructor
+      #   display_students.include? stud.id
+      # end
 
-      can :read, Family do |fam|  
-        #find the instructor
-        intruc = Instructor.map{|i| i if i.user.id == user.id}.first
-        display_students = Student.map{|s| }# map to get student who has this instructor
-        display_students.include? stud.id
-      end
+      # can :read, Family do |fam|  
+      #   #find the instructor
+      #   intruc = Instructor.map{|i| i if i.user.id == user.id}.first
+      #   display_students = Student.map{|s| }# map to get student who has this instructor
+      #   display_students.include? stud.id
+      # end
 
       
 
