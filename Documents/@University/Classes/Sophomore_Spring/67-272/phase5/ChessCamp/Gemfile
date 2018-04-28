@@ -68,7 +68,7 @@ gem 'validates_timeliness', '4.0.2'
 
 # Use simple_form to clean up form views
 gem 'simple_form', '3.5.0'
-
+gem 'cancancan', '2.1.2'
 # Use carrierwave to upload instructor photos
 # gem 'carrierwave'
 

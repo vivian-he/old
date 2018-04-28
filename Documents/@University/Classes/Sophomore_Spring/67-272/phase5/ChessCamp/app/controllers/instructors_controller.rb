@@ -1,6 +1,7 @@
 class InstructorsController < ApplicationController
   before_action :set_instructor, only: [:show, :edit, :update, :destroy]
-
+  before_action :check_login, only: [:edit, :new, :create, :update, :destroy]
+  authorize_resource
   def index
     @instructors = Instructor.all.alphabetical.paginate(:page => params[:page]).per_page(12)
   end

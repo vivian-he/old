@@ -22,7 +22,12 @@ class User < ApplicationRecord
     return false if role.nil?
     role.downcase.to_sym == authorized_role
   end
-    
+  
+  # login by username
+  def self.authenticate(username, password)
+    find_by_username(username).try(:authenticate, password)
+  end
+  
   private
   def reformat_phone
     self.phone = self.phone.to_s.gsub(/[^0-9]/,"")
