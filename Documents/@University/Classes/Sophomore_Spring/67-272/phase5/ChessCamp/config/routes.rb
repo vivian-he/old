@@ -1,4 +1,56 @@
 Rails.application.routes.draw do
+  get 'families/index'
+
+  get 'families/show'
+
+  get 'families/edit'
+
+  get 'families/new'
+
+  get 'families/create'
+
+  get 'families/update'
+
+  get 'families/destroy'
+
+  get 'students/index'
+
+  get 'students/show'
+
+  get 'students/edit'
+
+  get 'students/new'
+
+  get 'students/create'
+
+  get 'students/update'
+
+  get 'students/destroy'
+
+  get 'registrations/index'
+
+  get 'registrations/show'
+
+  get 'registrations/edit'
+
+  get 'registrations/new'
+
+  get 'registrations/create'
+
+  get 'registrations/update'
+
+  get 'registrations/destroy'
+
+  get 'credit_cards/edit'
+
+  get 'credit_cards/new'
+
+  get 'credit_cards/create'
+
+  get 'credit_cards/update'
+
+  get 'credit_cards/destroy'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # Semi-static page routes
   get 'home', to: 'home#index', as: :home
